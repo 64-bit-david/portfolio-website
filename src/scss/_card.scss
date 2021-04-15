@@ -1,6 +1,6 @@
 .project-card{
-  height: 350px;
-  width: 250px;
+  height: 500px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   perspective: 1000px;
@@ -12,7 +12,8 @@
     font-size: 1.8rem;
     text-align: center;
     border: 1px solid black;
-    border-top-width: 1.5px;
+    border-bottom: none;
+
   }
   .card-main{
     border: 1px solid black;
@@ -35,18 +36,64 @@
       flex-direction: column;
       align-items: center;
     }
+
+
+
     .flip-back{
       transform: rotateY(180deg);
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .card-back-header{
+        font-size: 1.7rem;
+        margin: 1rem;
+      }
+      .project-tech-list{
+        margin: 0 1rem;
+        ul.tech-icons-grid{
+          display: grid;
+          grid-template-columns: repeat((2, 1fr));
+          gap: 1rem;
+          margin-bottom: 1rem;
+
+          li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 .5rem;
+            font-size: 1.7rem;
+            background-color: antiquewhite;
+          }
+        }
+      }
+
+      .card-back-text{
+
+      }
+
+      .project-links-container{
+        margin: 1rem;
+        position: absolute;
+        bottom: 1rem;
+
+        a{
+          margin-right: 2rem;
+        }
+      }
 
     }
     .card-img{
       flex: 1;
+      padding: 1rem;
     }
     .card-desc{
       flex: 1;
       font-size: 1.7rem;
+      padding: 0 1rem;
     }
   }
   }

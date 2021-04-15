@@ -1,6 +1,9 @@
 .projects-container{
-  margin: 5rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5rem;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .project-card{
+    margin-bottom: 12rem;
+  }
+  }
