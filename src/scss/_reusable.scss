@@ -7,3 +7,67 @@
     text-decoration: underline;
   }
 }
+
+.nav-btn{
+  background-color: $color-3;
+  color: $color-1;
+  border: none;
+}
+
+.header-container{
+  text-align: center;
+  h2{
+    font-size: 2.9rem;
+    margin: 2rem 0;
+  }
+}
+
+p{
+  font-size: 1.8rem;
+}
+
+
+
+//animations
+
+@keyframes fadeInOut{
+  0%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@keyframes translateLeft {
+  0%{
+    transform: translateX(0)
+  }
+
+  100%{
+    transform: translateX(-65vw)
+  }
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

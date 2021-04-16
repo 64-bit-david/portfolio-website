@@ -1,55 +1,46 @@
-import { IoCogOutline } from 'react-icons/io5';
-import { IconContext } from 'react-icons';
-import { useRef, useEffect, useState } from 'react';
-
-
-const Nav = () => {
-
-  const cogRef = useRef();
-  const [scrollHeight, setScrollHeight] = useState(0);
-  const [rotation, setRotation] = useState(0);
-  const [cogPosition, setCogPosition] = useState(0);
-  const [docHeight, setDocHeight] = useState(0);
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      setScrollHeight(+window.pageYOffset);
-    })
-  }, [])
-
-  useEffect(() => {
-    setRotation(scrollHeight);
-    setCogPosition(scrollHeight / docHeight * 100)
-  })
-
-  useEffect(() => {
-    setDocHeight(window.document.body.offsetHeight)
-  })
 
 
 
-  console.log(rotation);
+const Nav = ({ aboutHeight, projectsHeight, contactHeight }) => {
+
+
+
+
+
+
   return (
     <nav>
-      <div className="cog-container">
-        <IconContext.Provider value={{
-          className: "cog"
-        }}>
-
-          <div style={{
-            transform: `translateY(${cogPosition}vh)`
-          }}>
-            <IoCogOutline ref={cogRef} style={{
-              transform: `rotate(${rotation}deg)`,
-            }} />
-          </div>
-        </IconContext.Provider>
-      </div>
       <div className="nav-list">
         <ul>
-          <li>
+          <div className="nav-list-top">
+            <li>
+              <button className='btn nav-btn'>
+                H
+              </button>
+              <h2>Home</h2>
+            </li>
+            <li>
+              <button className='btn nav-btn'>
+                A
+            </button>
+              <h2>About</h2>
+            </li>
+          </div>
+          <div className="nav-list-bottom">
 
-          </li>
+            <li>
+              <button className='btn nav-btn'>
+                P
+            </button>
+              <h2>Projects</h2>
+            </li>
+            <li>
+              <button className='btn nav-btn'>
+                C
+            </button>
+              <h2>Contact</h2>
+            </li>
+          </div>
         </ul>
       </div>
     </nav>

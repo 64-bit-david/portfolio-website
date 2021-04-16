@@ -4,20 +4,26 @@ import { FaCcStripe } from 'react-icons/fa';
 import { FaSass } from 'react-icons/fa';
 import { SiMongodb } from "react-icons/si";
 import { FaNodeJs } from 'react-icons/fa';
-
-
-
+import { useRef, useEffect } from 'react';
 
 import image1 from '../img/filler-img.jpg'
 
 
-const Projects = () => {
+const Projects = ({ setProjectsHeight }) => {
 
 
+  const projectsref = useRef();
+
+  useEffect(() => {
+    setProjectsHeight(projectsref.current.getBoundingClientRect().top)
+  }, [setProjectsHeight])
 
   const card1 = () => {
     return (
-      <div className="project-card project-card-1">
+      <div className="project-card project-card-1" ref={projectsref}>
+        <div className="header-container">
+          <h2>Projects</h2>
+        </div>
         <div className="card-header">
           <h2>Writer's Desk</h2>
         </div>
