@@ -39,11 +39,7 @@ const App = () => {
     setDocHeight(window.document.body.offsetHeight)
   }, [setDocHeight])
 
-  //function will take height of component(distance from top)
-  //and return as % relative to document height
-  const convertHeight = (height) => {
-    return (height / docHeight * 100)
-  }
+
 
 
   const renderCog = () => {

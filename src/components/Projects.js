@@ -70,8 +70,8 @@ const Projects = ({ setProjectsRef }) => {
               <p>lorem fdsjafdja;lk fjskdalfjsladk; flfhvm;kl fnjklfd fdsh d s s fd  fds fds adfsfsd f dsda fd sda f ds f asf dsa fsd af sda fdssadf  fds fds sfda fds fsd afdsa  ffsad  dsf fsd dfsfd fd fd  f dafs fds a fd saf dsafdsa f</p>
             </div>
             <div className="project-links-container">
-              <a href="#" className="btn card-btn">Code</a>
-              <a href="#" className="btn card-btn">Live Demo</a>
+              <a href="https://github.com/64-bit-david/Writer-App" className="btn card-btn">Code</a>
+              <a href="https://writers-desk.herokuapp.com/" className="btn card-btn">Live Demo</a>
             </div>
           </div>
         </div>
@@ -120,8 +120,8 @@ const Projects = ({ setProjectsRef }) => {
               <p>lorem fdsjafdja;lk fjskdalfjsladk; flfhvm;kl fnjklfd fdsh d s s fd  fds fds adfsfsd f dsda fd sda f ds f asf dsa fsd af sda fdssadf  fds fds sfda fds fsd afdsa  ffsad  dsf fsd dfsfd fd fd  f dafs fds a fd saf dsafdsa f</p>
             </div>
             <div className="project-links-container">
-              <a href="#" className="btn card-btn">Code</a>
-              <a href="#" className="btn card-btn">Live Demo</a>
+              <a href="https://github.com/64-bit-david/reddit-newspaper" className="btn card-btn">Code</a>
+              <a href="https://64-bit-david.github.io/reddit-newspaper/" className="btn card-btn">Live Demo</a>
             </div>
           </div>
         </div>
@@ -172,8 +172,8 @@ const Projects = ({ setProjectsRef }) => {
               <p>lorem fdsjafdja;lk fjskdalfjsladk; flfhvm;kl fnjklfd fdsh d s s fd  fds fds adfsfsd f dsda fd sda f ds f asf dsa fsd af sda fdssadf  fds fds sfda fds fsd afdsa  ffsad  dsf fsd dfsfd fd fd  f dafs fds a fd saf dsafdsa f</p>
             </div>
             <div className="project-links-container">
-              <a href="#" className="btn card-btn">Code</a>
-              <a href="#" className="btn card-btn">Live Demo</a>
+              <a href="https://github.com/64-bit-david/whiskymap" className="btn card-btn">Code</a>
+              <a href="https://wizardly-goldwasser-673228.netlify.app/" className="btn card-btn">Live Demo</a>
             </div>
           </div>
         </div>
@@ -226,8 +226,8 @@ const Projects = ({ setProjectsRef }) => {
               <p>lorem fdsjafdja;lk fjskdalfjsladk; flfhvm;kl fnjklfd fdsh d s s fd  fds fds adfsfsd f dsda fd sda f ds f asf dsa fsd af sda fdssadf  fds fds sfda fds fsd afdsasdfaklsd;akfdals;;</p>
             </div>
             <div className="project-links-container">
-              <a href="#" className="btn card-btn">Code</a>
-              <a href="#" className="btn card-btn">Live Demo</a>
+              <a href="https://github.com/64-bit-david/ExQuizit" className="btn card-btn">Code</a>
+              <a href="https://ex-quiz-it.herokuapp.com/" className="btn card-btn">Live Demo</a>
             </div>
           </div>
         </div>
