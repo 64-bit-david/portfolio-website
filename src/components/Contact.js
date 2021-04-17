@@ -2,14 +2,17 @@ import { useRef, useEffect } from 'react';
 
 
 
-const Contact = ({ setContactHeight }) => {
+const Contact = ({ setContactRef }) => {
 
   const contactref = useRef();
 
-  useEffect(() => {
-    setContactHeight(contactref.current.getBoundingClientRect().top)
 
-  }, [setContactHeight])
+
+  useEffect(() => {
+    setContactRef(contactref);
+  }, [setContactRef])
+
+
   return (
     <div className="contact-container" ref={contactref}>
       <div className="header-container">

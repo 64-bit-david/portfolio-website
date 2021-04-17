@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 
-const Header = () => {
+const Header = ({ setHeaderRef }) => {
+
+
+  const headerref = useRef();
+
+  useEffect(() => {
+    setHeaderRef(headerref);
+  }, [setHeaderRef]);
+
+
   return (
-    <div className="main-header-container">
+    <div
+      className="main-header-container"
+      ref={headerref}
+    >
       <h1>David Williamson</h1>
       <br />
       <h1>Web Developer</h1>

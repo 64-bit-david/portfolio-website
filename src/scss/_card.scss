@@ -1,6 +1,6 @@
 .project-card{
-  height: 500px;
-  width: 300px;
+  width: 95%;
+  max-width: 31rem;
   display: flex;
   flex-direction: column;
   perspective: 1000px;
@@ -9,32 +9,40 @@
     transform: rotateY(180deg);
   }
   .card-header{
-    font-size: 1.8rem;
     text-align: center;
-    border: 1px solid black;
-    border-bottom: none;
+    color: $color-2;
+    background-color: $color-1;
+    border: none;
+    border-bottom: 2px solid $color-2;
+    padding: .5rem 0;
+    
+
+    
 
   }
   .card-main{
-    border: 1px solid black;
+    border: none;
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    color: $color-2;
 
-    .flip-front, .flip-front {
+    .flip-front {
       position: absolute;
       width: 100%;
       height: 100%;
       -webkit-backface-visibility: hidden; /* Safari */
       backface-visibility: hidden;
+      
     }
     .flip-front{
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: $color-1;
     }
 
 
@@ -47,6 +55,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: $color-1;
 
       .card-back-header{
         font-size: 1.7rem;
@@ -64,9 +73,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 .5rem;
+            padding: .2rem 1rem;
             font-size: 1.7rem;
-            background-color: antiquewhite;
+            background-color: $color-2;
+            font-family: $font-1;
+            color: $color-1;
           }
         }
       }
@@ -75,15 +86,7 @@
 
       }
 
-      .project-links-container{
-        margin: 1rem;
-        position: absolute;
-        bottom: 1rem;
 
-        a{
-          margin-right: 2rem;
-        }
-      }
 
     }
     .card-img{
@@ -94,6 +97,20 @@
       flex: 1;
       font-size: 1.7rem;
       padding: 0 1rem;
+    }
+  }
+  .project-links-container{
+    background-color: $color-1;
+    color: $color-2;
+    border-top: 2px solid $color-2;
+    padding: 2rem 0;
+    text-align: center;
+    a{
+    color: $color-1;
+    height: 100%;
+    width: 100%;
+    margin: 0 1rem;
+
     }
   }
   }

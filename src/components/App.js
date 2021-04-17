@@ -15,9 +15,13 @@ const App = () => {
   const [rotation, setRotation] = useState(0);
   const [cogPosition, setCogPosition] = useState(0);
   const [docHeight, setDocHeight] = useState(0);
-  const [aboutHeight, setAboutHeight] = useState(0);
-  const [projectsHeight, setProjectsHeight] = useState(0);
-  const [contactHeight, setContactHeight] = useState(0);
+
+  const [aboutRef, setAboutRef] = useState(null);
+  const [projectsRef, setProjectsRef] = useState(null);
+  const [contactRef, setContactRef] = useState(null);
+  const [headerRef, setHeaderRef] = useState(null);
+
+
 
 
   useEffect(() => {
@@ -40,6 +44,7 @@ const App = () => {
   const convertHeight = (height) => {
     return (height / docHeight * 100)
   }
+
 
   const renderCog = () => {
     return (
@@ -64,16 +69,23 @@ const App = () => {
 
 
   return (
-    <main>
+    <main className="disable-scrollbars">
       {renderCog()}
-      <Header />
+      <Header setHeaderRef={setHeaderRef} />
       <Nav
-        aboutHeight={convertHeight(aboutHeight)} projectsHeight={convertHeight(projectsHeight)} contactHeight={convertHeight(contactHeight)} />
+        headerRef={headerRef}
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef} />
       <About
-        setAboutHeight={setAboutHeight}
+        setAboutRef={setAboutRef}
       />
-      <Projects setProjectsHeight={setProjectsHeight} />
-      <Contact setContactHeight={setContactHeight} />
+      <Projects
+        setProjectsRef={setProjectsRef}
+      />
+      <Contact
+        setContactRef={setContactRef}
+      />
     </main>
   )
 
