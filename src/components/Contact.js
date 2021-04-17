@@ -39,6 +39,7 @@ const Contact = ({ setContactRef }) => {
           <label>Message</label>
           <textarea name="message" />
           <button className="btn form-btn">Send</button>
+          <input type="hidden" value="contact" />
         </form>
         {success && (
           <p style={{ color: "green" }}>Thanks for your message! </p>
