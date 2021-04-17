@@ -11,3 +11,15 @@ $color-4: #A3CEF1;
 $color-5: #8B8C89;
 
 $color-2-dark: darken($color-2, 5%);
+$color-2-light: lighten($color-2, 5%);
+$color-2-lightest: lighten($color-2, 15%);
+
+
+
+
+//break-points 
+$sm: 480px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1300px;
+$xxl: 2000px;

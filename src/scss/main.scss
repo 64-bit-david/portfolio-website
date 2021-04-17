@@ -21,13 +21,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
  
 }
 
-body{
-  max-width: 100%;
-  overflow-x: hidden;
-  background-color: $color-2;
-  scrollbar-width: none;
-  margin: 0 2.5rem 0 2.5rem;
-}
 
 ol, ul {
   list-style: none;
@@ -55,9 +48,6 @@ html {
 }
 
 
-  .cog{
-  animation: rotate 1s 1.5s 1;
-  }
 
 
 

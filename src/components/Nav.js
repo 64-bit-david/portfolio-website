@@ -18,9 +18,8 @@ const Nav = ({ aboutRef, projectsRef, contactRef, headerRef }) => {
             <li>
               <button
                 className='btn nav-btn'
-                onClick={() => executeScroll(headerRef)}
-              >
-                H
+                onClick={() => executeScroll(headerRef)}>
+                <span className="nav-first-letter">H</span><span className="nav-rest-word">ome</span>
               </button>
               <h2>Home</h2>
             </li>
@@ -28,8 +27,8 @@ const Nav = ({ aboutRef, projectsRef, contactRef, headerRef }) => {
               <button
                 className='btn nav-btn'
                 onClick={() => executeScroll(aboutRef)}>
-                A
-            </button>
+                <span className="nav-first-letter">A</span><span className="nav-rest-word">bout</span>
+              </button>
               <h2>About</h2>
             </li>
           </div>
@@ -38,16 +37,16 @@ const Nav = ({ aboutRef, projectsRef, contactRef, headerRef }) => {
               <button
                 className='btn nav-btn'
                 onClick={() => executeScroll(projectsRef)}>
-                P
-            </button>
+                <span className="nav-first-letter">P</span><span className="nav-rest-word">rojects</span>
+              </button>
               <h2>Projects</h2>
             </li>
             <li>
               <button
                 className='btn nav-btn'
                 onClick={() => executeScroll(contactRef)}>
-                C
-            </button>
+                <span className="nav-first-letter">C</span><span className="nav-rest-word">ontact</span>
+              </button>
               <h2>Contact</h2>
             </li>
           </div>

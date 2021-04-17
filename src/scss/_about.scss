@@ -7,4 +7,23 @@
   p{
     text-align: center;
   }
+
+  .profile-img-container{
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 5rem;
+
+  @media(min-width: $md){
+    width: 30rem;
+    height: 30rem;
+  }
+  }
+
+  @media(min-width: $md){
+    margin: 0 5rem 10rem 5rem;
+    p{
+      margin-top: 3rem;
+      font-size: 1.8rem;
+    }
+  }
 }

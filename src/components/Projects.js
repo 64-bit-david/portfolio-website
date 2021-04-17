@@ -31,7 +31,7 @@ const Projects = ({ setProjectsRef }) => {
                 src={image1} />
             </div>
             <div className="card-desc">
-              <p>A full stack MERN web app for creative writers to share their work. Users may post story or snippet, comment on other stories and donate to other writers</p>
+              <p>A full stack MERN web app for creative writers to share their work. Users can post new stories, snippets and comments as well as support other writers with a donation.</p>
             </div>
           </div>
           <div className="flip-back">
@@ -83,7 +83,7 @@ const Projects = ({ setProjectsRef }) => {
     return (
       <div className="project-card project-card-1">
         <div className="card-header">
-          <h2>Reddit NewsPaper</h2>
+          <h2>Reddit Newspaper</h2>
         </div>
         <div className="card-main">
           <div className="flip-front">
@@ -241,10 +241,12 @@ const Projects = ({ setProjectsRef }) => {
         <h2>Projects</h2>
         <p>(Tap cards for more info)</p>
       </div>
-      {card1()}
-      {card2()}
-      {card3()}
-      {card4()}
+      <div className="projects-cards-container">
+        {card1()}
+        {card2()}
+        {card3()}
+        {card4()}
+      </div>
 
     </div>
   )
