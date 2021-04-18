@@ -239,7 +239,14 @@ const Projects = ({ setProjectsRef }) => {
     <div className="projects-container" ref={projectsref}>
       <div className="header-container">
         <h2>Projects</h2>
-        <p>(Tap cards for more info)</p>
+        <p>
+          <span className="card-prompt-mobile">
+            (Tap cards for more info)
+        </span>
+          <span className="card-prompt-desktop">
+            (Hover cards for more info)
+        </span>
+        </p>
       </div>
       <div className="projects-cards-container">
         {card1()}
