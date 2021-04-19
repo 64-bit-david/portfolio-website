@@ -14,20 +14,7 @@
 
 }
 
-.nav-btn{
-  font-size: 1.7rem;
-  padding: 1rem .8rem 1rem .3rem;
-  border-left: none;
-  color: $color-2;
-  background-color: $color-1;
 
-  @media(min-width: $md){
-    font-size: 2.4rem;
-    padding: 1.5rem 1rem 1.5rem 1rem;
-    border-left: 1px solid $color-1
-  }
-
-}
 
 .card-btn{
   padding: 1rem;
@@ -65,15 +52,39 @@ p{
   }
 }
 
-@keyframes translateLeft {
+@keyframes translateRight {
   0%{
-    transform: translateX(0)
+    transform: translateX(0);
   }
 
   100%{
-    transform: translateX(65vw)
+    transform: translateX(7rem);
   }
 }
+
+@keyframes translateRightLgDv {
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(9.5rem);
+  }
+}
+
+@keyframes translateLeftLgDv {
+  0%{
+    transform: translateX(10rem);
+  }
+  80%{
+    transform: translateX(10rem);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
 
 @keyframes fadeIn{
   0%{

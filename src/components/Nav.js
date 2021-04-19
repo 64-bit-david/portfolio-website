@@ -1,4 +1,6 @@
 
+import { AiOutlineFundProjectionScreen, AiOutlineHome, AiOutlineQuestion } from 'react-icons/ai';
+import { FiMessageSquare, FiHome } from 'react-icons/fi'
 
 
 const Nav = ({ aboutRef, projectsRef, contactRef, headerRef }) => {
@@ -19,17 +21,19 @@ const Nav = ({ aboutRef, projectsRef, contactRef, headerRef }) => {
               <button
                 className='btn nav-btn'
                 onClick={() => executeScroll(headerRef)}>
-                <span className="nav-first-letter">H</span><span className="nav-rest-word">ome</span>
+                <span className="nav-icon"><FiHome /></span>
+                <span className="nav-text">Home</span>
               </button>
-              <h2>Home</h2>
+              {/* <h2>Home</h2> */}
             </li>
             <li>
               <button
                 className='btn nav-btn'
                 onClick={() => executeScroll(aboutRef)}>
-                <span className="nav-first-letter">A</span><span className="nav-rest-word">bout</span>
+                <span className="nav-icon"><AiOutlineQuestion /></span>
+                <span className="nav-text">About</span>
               </button>
-              <h2>About</h2>
+              {/* <h2>About</h2> */}
             </li>
           </div>
           <div className="nav-list-bottom">
@@ -37,17 +41,20 @@ const Nav = ({ aboutRef, projectsRef, contactRef, headerRef }) => {
               <button
                 className='btn nav-btn'
                 onClick={() => executeScroll(projectsRef)}>
-                <span className="nav-first-letter">P</span><span className="nav-rest-word">rojects</span>
+                <span className="nav-icon">
+                  <AiOutlineFundProjectionScreen /></span><span className="nav-text">Projects</span>
               </button>
-              <h2>Projects</h2>
+              {/* <h2>Projects</h2> */}
             </li>
             <li>
               <button
                 className='btn nav-btn'
                 onClick={() => executeScroll(contactRef)}>
-                <span className="nav-first-letter">C</span><span className="nav-rest-word">ontact</span>
+                <span className="nav-icon">
+                  <FiMessageSquare /></span>
+                <span className="nav-text">Contact</span>
               </button>
-              <h2>Contact</h2>
+              {/* <h2>Contact</h2> */}
             </li>
           </div>
         </ul>
