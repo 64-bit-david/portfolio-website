@@ -1,12 +1,29 @@
+import { FaReact } from 'react-icons/fa';
+
+
 const Footer = () => {
   return (
-    <div>
+    <footer>
+      <div className="footer-left">
+        <p>Website created with React </p>
+        <div className="footer-icon-container"><FaReact /></div>
+      </div>
+      <div className="footer-right">
+        <div className="footer-right-item">
+          <p>Icons Credit:</p>
+          <a href="https://react-icons.github.io/react-icons">
+            React Icons</a>
 
-    </div>
+        </div>
+        <div className="footer-right-item">
+          <p>Background SVG credit: </p>
+          <a href="https://bgjar.com/">BGJar</a>
+
+        </div>
+      </div>
+    </footer>
   )
 }
 
-//attribute for cog
-//<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 export default Footer

@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Nav from './Nav';
 import About from './About';
 import Contact from './Contact';
+import Footer from './Footer';
 
 const App = () => {
 
@@ -85,6 +86,7 @@ const App = () => {
       <Contact
         setContactRef={setContactRef}
       />
+      <Footer />
       <div className="background-svg"></div>
     </main>
   )

@@ -27,6 +27,7 @@ nav{
     align-items: flex-start;
     opacity: 0;
     animation: fadeIn .2s .5s ease-in forwards;
+    z-index: 150;
 
     @media(min-width: $md){
     right: 12rem;
