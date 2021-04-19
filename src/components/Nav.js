@@ -1,5 +1,5 @@
 
-import { AiOutlineFundProjectionScreen, AiOutlineHome, AiOutlineQuestion } from 'react-icons/ai';
+import { AiOutlineFundProjectionScreen, AiOutlineQuestion } from 'react-icons/ai';
 import { FiMessageSquare, FiHome } from 'react-icons/fi'
 
 
