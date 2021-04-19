@@ -16,10 +16,12 @@ const App = () => {
   const [cogPosition, setCogPosition] = useState(0);
   const [docHeight, setDocHeight] = useState(0);
 
+
   const [aboutRef, setAboutRef] = useState(null);
   const [projectsRef, setProjectsRef] = useState(null);
   const [contactRef, setContactRef] = useState(null);
   const [headerRef, setHeaderRef] = useState(null);
+
 
 
 
@@ -65,7 +67,8 @@ const App = () => {
 
 
   return (
-    <main className="disable-scrollbars">
+    <main>
+
       {renderCog()}
       <Header setHeaderRef={setHeaderRef} />
       <Nav
@@ -82,6 +85,7 @@ const App = () => {
       <Contact
         setContactRef={setContactRef}
       />
+      <div className="background-svg"></div>
     </main>
   )
 

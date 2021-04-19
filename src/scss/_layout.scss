@@ -4,9 +4,9 @@ body{
   background-color: $color-2;
   scrollbar-width: none;
   margin: 0 2.5rem 0 2.5rem;
-  @media(min-width: $md){
-  margin: 0 5rem;
-  }
+    @media(min-width: $md){
+    margin: 0 5rem;
+    }
 }
 
 
@@ -24,77 +24,6 @@ body{
 }
 
 
-  nav{
-    position: fixed;
-    left: 0;
-    height: 100vh;
-    top: 0;
-    width: 2.5rem;
-    background-color: $color-2-dark;
-    display: block;
+  
 
-    @media(min-width: $md){
-      width: 5rem;
-    }
-    
-    .nav-list ul{
-      position: fixed;
-      left: 0;
-      height: 100vh;
-      top: 0;
-      width: 2.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-   
-
-
-      li{
-        margin: 2.5rem 0;
-        position: relative;
-
-        h2{
-          position: absolute;
-          top: .7rem;
-          left: calc(50vw - 5rem);
-          opacity: 0;
-          animation: translateLeft 1s 1.5s 1 forwards, fadeInOut 2s 1 forwards;;
-        }
-        button{
-          opacity: 0;
-          animation: fadeIn 1.5s 1.5s forwards ease-in;
-
-          .nav-rest-word{
-            display: none;
-          }
-        }
-      
-      }
-    }
-  }
-
-  .cog-container{
-    text-align: center;
-    font-size: 2.5rem;
-    position: fixed;
-    display: block;
-    right: 0;
-    height: 100vh;
-    top: 0;
-    padding-top: 3rem;
-    color: $color-5;
-    background-color: $color-2-dark;
-    
-    .cog{
-      animation: rotate 1s 1.5s 1;
-    }
-    
-
-    @media(min-width: $md){
-      width: 5rem;
-      font-size: 5rem;
-    }
-  }
-
-
+  
