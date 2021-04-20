@@ -41,9 +41,16 @@
   }
   .project-card{
     margin-bottom: 12rem;
+    
     @media(min-width: $md){
     margin-bottom: 2rem; 
     }
+  }
+
+  .card-btn:hover{
+    background-color: $color-1;
+    color: $color-2;
+    border-color: $color-2;
   }
 
   }

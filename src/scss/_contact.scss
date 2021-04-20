@@ -49,6 +49,11 @@ form{
     margin-top: 3rem;
     padding: 1rem 1.5rem;
     font-size: 1.8rem; 
+    border: 1.5px solid $color-1;
+    &:hover{
+      background-color: $color-1;
+      color: $color-2;
+    }
   }
 
   .val-warn{

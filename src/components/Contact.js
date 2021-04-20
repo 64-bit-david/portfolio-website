@@ -2,6 +2,8 @@ import { useRef, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import Loader from 'react-loader-spinner';
+import Slide from 'react-reveal/Slide';
+
 
 
 
@@ -126,7 +128,9 @@ const Contact = ({ setContactRef }) => {
 
   return (
     <div className="contact-container" ref={contactref}>
-      { formSubmit ? renderFormSubmitMessage() : renderContactForm()}
+      <Slide bottom cascade >
+        {formSubmit ? renderFormSubmitMessage() : renderContactForm()}
+      </Slide>
     </div>
   )
 }

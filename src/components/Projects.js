@@ -1,6 +1,7 @@
 import { FaReact, FaHtml5, FaCcStripe, FaSass, FaNodeJs } from 'react-icons/fa';
 import { SiCss3, SiRedux, SiMongodb, SiMapbox } from 'react-icons/si'
 import { useRef, useEffect } from 'react';
+import Slide from 'react-reveal/Slide';
 
 import image1 from '../img/filler-img.jpg'
 
@@ -236,26 +237,30 @@ const Projects = ({ setProjectsRef }) => {
   }
 
   return (
+
     <div className="projects-container" ref={projectsref}>
-      <div className="header-container">
-        <h2>Projects</h2>
-        <p>
-          <span className="card-prompt-mobile">
-            (Tap cards for more info)
+      <Slide bottom cascade >
+        <div className="header-container">
+          <h2>Projects</h2>
+          <p>
+            <span className="card-prompt-mobile">
+              (Tap cards for more info)
         </span>
-          <span className="card-prompt-desktop">
-            (Hover cards for more info)
+            <span className="card-prompt-desktop">
+              (Hover cards for more info)
         </span>
-        </p>
-      </div>
-      <div className="projects-cards-container">
-        {card1()}
-        {card2()}
-        {card3()}
-        {card4()}
-      </div>
+          </p>
+        </div>
+        <div className="projects-cards-container">
+          {card1()}
+          {card2()}
+          {card3()}
+          {card4()}
+        </div>
+      </Slide>
 
     </div>
+
   )
 }
 

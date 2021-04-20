@@ -5,25 +5,49 @@
   margin-bottom: 5rem;
   border-top: 2rem solid $color-2-dark;
 
-  p{
-    text-align: center;
-  }
+
+
 
   .profile-img-container{
     width: 20rem;
     height: 20rem;
     margin-bottom: 5rem;
 
-  @media(min-width: $md){
-    width: 30rem;
-    height: 30rem;
+    @media(min-width: $md){
+      width: 30rem;
+      height: 30rem;
+    }
   }
+
+  .about-icons-container {
+    display: flex;
+    margin-bottom: 5rem;
+    a{
+      display: flex;
+
+      color: $color-1;
+      font-size: 3rem;
+      text-align: center;
+      margin: 0 1.5rem;
+      padding: 1.25rem;
+      border: 4px solid $color-2-dark;
+      border-radius: 50%;
+    &:hover{
+      border-color: $color-2-light;
+      transition: all .15s ease-in;
+    }
+    }
+  }
+
+  p{
+    text-align: center;
+    margin: 0 1rem;
   }
 
   @media(min-width: $md){
     margin-bottom: 10rem;
     p{
-      margin-top: 3rem;
+      margin: 3rem 7.5rem 0 7.5rem;
       font-size: 1.8rem;
     }
   }

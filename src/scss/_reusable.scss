@@ -7,11 +7,6 @@
   cursor: pointer;
   transition: all .15s ease-in;
 
-  &:hover{
-    background-color: $color-2-dark;
-  }
-
-
 
 }
 
@@ -25,6 +20,7 @@
 
 .header-container{
   text-align: center;
+  margin-top: 3rem;
   h2{
     font-size: 2.9rem;
     margin: 2rem 0;
