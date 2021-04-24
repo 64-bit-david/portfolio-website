@@ -2,7 +2,8 @@ import { useRef, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import Loader from 'react-loader-spinner';
-import Slide from 'react-reveal/Slide';
+
+
 
 
 
@@ -16,7 +17,6 @@ const Contact = ({ setContactRef }) => {
   const [formSubmit, setFormSubmit] = useState(false);
   const [formSuccess, setFormSuccess] = useState(null);
   const [loading, setLoading] = useState(false);
-
 
   useEffect(() => {
     setContactRef(contactref);
@@ -64,16 +64,17 @@ const Contact = ({ setContactRef }) => {
   const renderContactForm = () => {
 
     return (
-      <div>
+      <>
         <div className="header-container">
           <h2>Contact</h2>
           <p>Feel free to get in touch!</p>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} id="contact-form">
-          <label>Name</label>
+          <label htmlFor="name">Name</label>
           <input
             name="name"
+            id="name"
             {...register('name', { required: true, maxLength: 100 })}
           />
           {
@@ -83,9 +84,10 @@ const Contact = ({ setContactRef }) => {
             errors.name && errors.name.type === 'maxLength' &&
             <p className="val-warn">No name is that long!</p>
           }
-          <label>Email</label>
+          <label htmlFor="email">Email</label>
           <input
             name="email"
+            id="email"
             {...register('email', {
               required: true,
               maxLength: 100,
@@ -102,8 +104,10 @@ const Contact = ({ setContactRef }) => {
             errors.email && errors.email.type === "required" &&
             <p className="val-warn">Required</p>
           }
-          <label>Message</label>
-          <textarea name="message"
+          <label htmlFor="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
             {...register('message', { required: true, maxLength: 1000 })}
           />
           {
@@ -122,15 +126,16 @@ const Contact = ({ setContactRef }) => {
             <button className="btn form-btn">Send</button>
           }
         </form>
-      </div>
+      </>
     )
   }
 
   return (
-    <div className="contact-container" ref={contactref}>
-      <Slide bottom cascade >
-        {formSubmit ? renderFormSubmitMessage() : renderContactForm()}
-      </Slide>
+    <div
+      className="contact-container"
+      ref={contactref}
+      data-aos="fade-up">
+      {formSubmit ? renderFormSubmitMessage() : renderContactForm()}
     </div>
   )
 }

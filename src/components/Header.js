@@ -11,14 +11,14 @@ const Header = ({ setHeaderRef }) => {
 
 
   return (
-    <div
+    <header
       className="main-header-container"
       ref={headerref}
     >
       <h1>David Williamson</h1>
       <br />
       <h1>Web Developer</h1>
-    </div>
+    </header>
   )
 }
 

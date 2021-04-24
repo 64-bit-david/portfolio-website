@@ -1,6 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { IoCogOutline } from 'react-icons/io5';
 import { IconContext } from 'react-icons';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import Header from './Header';
 import Projects from './Projects';
 import Nav from './Nav';
@@ -24,7 +27,9 @@ const App = () => {
   const [headerRef, setHeaderRef] = useState(null);
 
 
-
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
 
 
   useEffect(() => {
@@ -68,8 +73,7 @@ const App = () => {
 
 
   return (
-    <main>
-
+    <>
       {renderCog()}
       <Header setHeaderRef={setHeaderRef} />
       <Nav
@@ -77,18 +81,20 @@ const App = () => {
         aboutRef={aboutRef}
         projectsRef={projectsRef}
         contactRef={contactRef} />
-      <About
-        setAboutRef={setAboutRef}
-      />
-      <Projects
-        setProjectsRef={setProjectsRef}
-      />
-      <Contact
-        setContactRef={setContactRef}
-      />
-      <Footer />
-      <div className="background-svg"></div>
-    </main>
+      <main>
+        <About
+          setAboutRef={setAboutRef}
+        />
+        <Projects
+          setProjectsRef={setProjectsRef}
+        />
+        <Contact
+          setContactRef={setContactRef}
+        />
+        <Footer />
+        <div className="background-svg"></div>
+      </main>
+    </>
   )
 
 }

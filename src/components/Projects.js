@@ -1,13 +1,17 @@
 import { FaReact, FaHtml5, FaCcStripe, FaSass, FaNodeJs } from 'react-icons/fa';
 import { SiCss3, SiRedux, SiMongodb, SiMapbox } from 'react-icons/si'
 import { useRef, useEffect } from 'react';
-import Slide from 'react-reveal/Slide';
 
-import image1 from '../img/filler-img.jpg'
+
+import image1 from '../img/writers-desk-min.jpg'
+import image2 from '../img/reddit-news-min.jpg';
+import image3 from '../img/whiskymap-min.jpg';
+import image4 from '../img/ex-quiz-it.jpg';
+
+
 
 
 const Projects = ({ setProjectsRef }) => {
-
 
   const projectsref = useRef();
 
@@ -18,9 +22,11 @@ const Projects = ({ setProjectsRef }) => {
   }, [setProjectsRef])
 
 
+  //project cards
+
   const card1 = () => {
     return (
-      <div className="project-card project-card-1">
+      <section className="project-card project-card-1" data-aos="zoom-in">
         <div className="card-header">
           <h2>Writer's Desk</h2>
         </div>
@@ -76,13 +82,13 @@ const Projects = ({ setProjectsRef }) => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     )
   }
 
   const card2 = () => {
     return (
-      <div className="project-card project-card-1">
+      <div className="project-card project-card-1" data-aos="zoom-in">
         <div className="card-header">
           <h2>Reddit Newspaper</h2>
         </div>
@@ -90,8 +96,8 @@ const Projects = ({ setProjectsRef }) => {
           <div className="flip-front">
             <div className="card-img">
               <img
-                alt="Snapshot of Writer's Desk Site"
-                src={image1} />
+                alt="Snapshot of Reddit Newspaper Site"
+                src={image2} />
             </div>
             <div className="card-desc">
               <p>A single page application that fetches top level posts from the reddit api and presents the data in the style of a front page newspaper providing the user a more immersive reading experience.  </p>
@@ -134,19 +140,19 @@ const Projects = ({ setProjectsRef }) => {
 
   const card3 = () => {
     return (
-      <div className="project-card project-card-1">
+      <div className="project-card project-card-1" data-aos="zoom-in">
         <div className="card-header">
-          <h2>Whisky Map</h2>
+          <h2>Distillery Map</h2>
         </div>
         <div className="card-main">
           <div className="flip-front">
             <div className="card-img">
               <img
-                alt="Snapshot of Writer's Desk Site"
-                src={image1} />
+                alt="Screenshot of Whisky Map project"
+                src={image3} />
             </div>
             <div className="card-desc">
-              <p>A single page application that displays an interactive map of Scottish Whisky distilleries using mapbox and the corresponding react wrapper react-map-gl wrapper </p>
+              <p>An interactive map of Scottish whisky distilleries created with React-Map-GL, a React wrapper for Mapbox. </p>
             </div>
           </div>
           <div className="flip-back">
@@ -174,7 +180,7 @@ const Projects = ({ setProjectsRef }) => {
             </div>
             <div className="project-links-container">
               <a href="https://github.com/64-bit-david/whiskymap" className="btn card-btn">Code</a>
-              <a href="https://wizardly-goldwasser-673228.netlify.app/" className="btn card-btn">Live Demo</a>
+              <a href="https://distillery-map.netlify.app" className="btn card-btn">Live Demo</a>
             </div>
           </div>
         </div>
@@ -184,7 +190,7 @@ const Projects = ({ setProjectsRef }) => {
 
   const card4 = () => {
     return (
-      <div className="project-card project-card-1">
+      <div className="project-card project-card-1" data-aos="zoom-in">
         <div className="card-header">
           <h2>Ex-Quiz-it!</h2>
         </div>
@@ -192,11 +198,11 @@ const Projects = ({ setProjectsRef }) => {
           <div className="flip-front">
             <div className="card-img">
               <img
-                alt="Snapshot of Writer's Desk Site"
-                src={image1} />
+                alt="Snapshot of Ex-Quiz-it! Site"
+                src={image4} />
             </div>
             <div className="card-desc">
-              <p>Trivia website for users to create and take quizzes. Uses server side template rendering. Built using MVC principles.</p>
+              <p>Trivia CRUD website for users to create and take quizzes. Uses server side template rendering. Built using MVC principles.</p>
             </div>
           </div>
           <div className="flip-back">
@@ -239,25 +245,23 @@ const Projects = ({ setProjectsRef }) => {
   return (
 
     <div className="projects-container" ref={projectsref}>
-      <Slide bottom cascade >
-        <div className="header-container">
-          <h2>Projects</h2>
-          <p>
-            <span className="card-prompt-mobile">
-              (Tap cards for more info)
+      <div className="header-container" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>
+          <span className="card-prompt-mobile">
+            (Tap cards for more info)
         </span>
-            <span className="card-prompt-desktop">
-              (Hover cards for more info)
+          <span className="card-prompt-desktop">
+            (Hover cards for more info)
         </span>
-          </p>
-        </div>
-        <div className="projects-cards-container">
-          {card1()}
-          {card2()}
-          {card3()}
-          {card4()}
-        </div>
-      </Slide>
+        </p>
+      </div>
+      <div className="projects-cards-container">
+        {card1()}
+        {card2()}
+        {card3()}
+        {card4()}
+      </div>
 
     </div>
 
