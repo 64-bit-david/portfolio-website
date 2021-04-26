@@ -82,7 +82,7 @@ const Projects = ({ setProjectsRef }) => {
               </ul>
             </div>
             <div className="card-back-text">
-              <p>Setting the scope of the project was challenging, the amount of features to include in a user-generated content application like this is virtually endless but as a portfolio project I believe I struck a good balance.</p>
+              <p>Setting the scope of the project was challenging, the amount of features to include in a user-generated content application like this is virtually endless but for a portfolio project I believe I struck a good balance.</p>
             </div>
             <div className="project-links-container">
               <a
