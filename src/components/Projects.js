@@ -38,7 +38,15 @@ const Projects = ({ setProjectsRef }) => {
                 src={image1} />
             </div>
             <div className="card-desc">
-              <p>A full stack MERN web app for creative writers to share their work. Users can post new stories, snippets and comments as well as support other writers with a donation.</p>
+              <p>
+                A full stack MERN web app for creative writers to share their work.
+              </p>
+              <p>
+                Authentication uses OAuth2 with Google, and the backend follows REST API principles.
+              </p>
+              <p>
+                One feature of the application includes a live-feed that uses websockets to update in real-time.
+              </p>
             </div>
           </div>
           <div className="flip-back">
@@ -74,11 +82,20 @@ const Projects = ({ setProjectsRef }) => {
               </ul>
             </div>
             <div className="card-back-text">
-              <p>lorem fdsjafdja;lk fjskdalfjsladk; flfhvm;kl fnjklfd fdsh d s s fd  fds fds adfsfsd f dsda fd sda f ds f asf dsa fsd af sda fdssadf  fds fds sfda fds fsd afdsa  ffsad  dsf fsd dfsfd fd fd  f dafs fds a fd saf dsafdsa f</p>
+              <p>Setting the scope of the project was challenging, the amount of features to include in a user-generated content application like this is virtully endless but as a portfolio project I believe I've struck a good balance.</p>
             </div>
             <div className="project-links-container">
-              <a href="https://github.com/64-bit-david/Writer-App" className="btn card-btn">Code</a>
-              <a href="https://writers-desk.herokuapp.com/" className="btn card-btn">Live Demo</a>
+              <a
+                href="https://github.com/64-bit-david/Writer-App" className="btn card-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Code</a>
+              <a
+                href="https://writers-desk.herokuapp.com/"
+                className="btn card-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Live Demo</a>
             </div>
           </div>
         </div>
@@ -100,7 +117,7 @@ const Projects = ({ setProjectsRef }) => {
                 src={image2} />
             </div>
             <div className="card-desc">
-              <p>A single page application that fetches top level posts from the reddit api and presents the data in the style of a front page newspaper providing the user a more immersive reading experience.  </p>
+              <p>A single page application that fetches top level posts and comments from the reddit api and presents the data in the style of a front page newspaper providing the user a more immersive reading experience.</p>
             </div>
           </div>
           <div className="flip-back">
@@ -124,11 +141,20 @@ const Projects = ({ setProjectsRef }) => {
               </ul>
             </div>
             <div className="card-back-text">
-              <p>lorem fdsjafdja;lk fjskdalfjsladk; flfhvm;kl fnjklfd fdsh d s s fd  fds fds adfsfsd f dsda fd sda f ds f asf dsa fsd af sda fdssadf  fds fds sfda fds fsd afdsa  ffsad  dsf fsd dfsfd fd fd  f dafs fds a fd saf dsafdsa f</p>
+              <p>Keeping the content presentable was challenging, as each post can vary in length. This was achieved with a few methods, including adding conditions that dynamically attach css classes that alter size and typography</p>
             </div>
             <div className="project-links-container">
-              <a href="https://github.com/64-bit-david/reddit-newspaper" className="btn card-btn">Code</a>
-              <a href="https://64-bit-david.github.io/reddit-newspaper/" className="btn card-btn">Live Demo</a>
+              <a href="https://github.com/64-bit-david/reddit-newspaper"
+                className="btn card-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Code</a>
+              <a
+                href="https://64-bit-david.github.io/reddit-newspaper/"
+                className="btn card-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Live Demo</a>
             </div>
           </div>
         </div>
@@ -176,11 +202,20 @@ const Projects = ({ setProjectsRef }) => {
               </ul>
             </div>
             <div className="card-back-text">
-              <p>lorem fdsjafdja;lk fjskdalfjsladk; flfhvm;kl fnjklfd fdsh d s s fd  fds fds adfsfsd f dsda fd sda f ds f asf dsa fsd af sda fdssadf  fds fds sfda fds fsd afdsa  ffsad  dsf fsd dfsfd fd fd  f dafs fds a fd saf dsafdsa f</p>
+              <p>Figuring out Mapbox was challenging, but it was rewarding to learn and then implement a new technology.</p>
+              <br />
             </div>
             <div className="project-links-container">
-              <a href="https://github.com/64-bit-david/whiskymap" className="btn card-btn">Code</a>
-              <a href="https://distillery-map.netlify.app" className="btn card-btn">Live Demo</a>
+              <a
+                href="https://github.com/64-bit-david/whiskymap" className="btn card-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Code</a>
+              <a
+                href="https://distillery-map.netlify.app" className="btn card-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Live Demo</a>
             </div>
           </div>
         </div>
@@ -202,7 +237,7 @@ const Projects = ({ setProjectsRef }) => {
                 src={image4} />
             </div>
             <div className="card-desc">
-              <p>Trivia CRUD website for users to create and take quizzes. Uses server side template rendering. Built using MVC principles.</p>
+              <p>Trivia CRUD website with built in authentication for users to create and take quizzes. Uses server side template rendering and built using MVC principles.</p>
             </div>
           </div>
           <div className="flip-back">
@@ -230,11 +265,20 @@ const Projects = ({ setProjectsRef }) => {
               </ul>
             </div>
             <div className="card-back-text">
-              <p>lorem fdsjafdja;lk fjskdalfjsladk; flfhvm;kl fnjklfd fdsh d s s fd  fds fds adfsfsd f dsda fd sda f ds f asf dsa fsd af sda fdssadf  fds fds sfda fds fsd afdsasdfaklsd;akfdals;;</p>
+              <p>As this was my first project much of this was challenging but it allowed me to really get to grips with Nodejs, MongoDB and DOM manipulation.</p>
             </div>
             <div className="project-links-container">
-              <a href="https://github.com/64-bit-david/ExQuizit" className="btn card-btn">Code</a>
-              <a href="https://ex-quiz-it.herokuapp.com/" className="btn card-btn">Live Demo</a>
+              <a
+                href="https://github.com/64-bit-david/ExQuizit" className="btn card-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Code</a>
+              <a
+                href="https://ex-quiz-it.herokuapp.com/"
+                className="btn card-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Live Demo</a>
             </div>
           </div>
         </div>

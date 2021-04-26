@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from 'react';
-import { FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 import Aos from 'aos';
 import 'aos/dist/aos';
@@ -26,7 +25,7 @@ const About = ({ setAboutRef }) => {
   return (
     <div ref={aboutref} className="about-container" data-aos="fade-up">
       <div className="header-container">
-        <h2>About</h2>
+        <h2>About Me</h2>
       </div>
 
       <div className="profile-img-container" data-aos="fade-up">
@@ -42,7 +41,9 @@ const About = ({ setAboutRef }) => {
         </div>
       </div>
       <div className="about-text" data-aos="fade-up">
-        <p>Hi there! I'm David Williamson, a self-taught web developer familiar with the MERN stack currently in search of a junior/entry level position. </p>
+        <p>Hi there! I'm David Williamson, a javascript web developer currently in search of an entry level / junior position.</p>
+        <br />
+        <p>On this site you'll find some of my latest projects built to showcase the skills and technologies I have been learning on my journey to become a web developer. </p>
       </div>
     </div>
   )

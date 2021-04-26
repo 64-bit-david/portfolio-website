@@ -15,9 +15,15 @@ const Header = ({ setHeaderRef }) => {
       className="main-header-container"
       ref={headerref}
     >
-      <h1>David Williamson</h1>
+      <h1
+        data-aos="fade-down"
+        data-aos-delay="1500"
+      >David Williamson</h1>
       <br />
-      <h1>Web Developer</h1>
+      <h1
+        data-aos="fade-up"
+        data-aos-delay="2000"
+      >Web Developer</h1>
     </header>
   )
 }
