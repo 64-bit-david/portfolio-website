@@ -82,7 +82,7 @@ const Projects = ({ setProjectsRef }) => {
               </ul>
             </div>
             <div className="card-back-text">
-              <p>Setting the scope of the project was challenging, the amount of features to include in a user-generated content application like this is virtually endless but for a portfolio project I believe I struck a good balance.</p>
+              <p>Accurately posting payments / donations data for users was challenging due to the limits of the Stripe API. Using query parameters and a unique payment ID of paid / not I was able to solve the issue.</p>
             </div>
             <div className="project-links-container">
               <a

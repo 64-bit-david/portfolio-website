@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { SiGmail } from 'react-icons/si'
 import emailjs from 'emailjs-com';
 import Loader from 'react-loader-spinner';
 
@@ -62,12 +63,21 @@ const Contact = ({ setContactRef }) => {
 
 
   const renderContactForm = () => {
-
     return (
       <>
         <div className="header-container">
           <h2>Contact</h2>
           <p>Feel free to get in touch!</p>
+        </div>
+
+        <div className="about-icons-container" data-aos="fade-up">
+          <div className="about-icon-container">
+            <a
+              aria-label="Send E-mail to David Williamosn"
+              href="mailto:dwilliamsonwebdev@gmail.com">
+              <SiGmail />
+            </a>
+          </div>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} id="contact-form">
