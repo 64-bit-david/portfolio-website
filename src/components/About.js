@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos';
+import { FaLinkedin } from 'react-icons/fa'
 import profilePic from '../img/profile.png';
 
 const About = ({ setAboutRef }) => {
@@ -31,15 +32,15 @@ const About = ({ setAboutRef }) => {
         <img src={profilePic} alt=" Headshot of David Williamson" />
       </div>
       {/* linkedin link goes here */}
-      {/* <div className="about-icons-container" data-aos="fade-up">
+      <div className="about-icons-container" data-aos="fade-up">
         <div className="about-icon-container">
           <a
-            aria-label="Send E-mail to David Williamosn"
-            href="mailto:dwilliamsonwebdev@gmail.com">
-            <SiGmail />
+            aria-label="Link to David Williamson Linkedin Profile"
+            href="https://www.linkedin.com/in/david-williamson-38925a140/">
+            <FaLinkedin />
           </a>
         </div>
-      </div> */}
+      </div>
       <div className="about-text" data-aos="fade-up">
         <p>Hi there! I'm David Williamson, a javascript web developer based in the UK currently in search of an entry level / junior position.</p>
         <br />
