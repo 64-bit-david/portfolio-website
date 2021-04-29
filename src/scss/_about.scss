@@ -8,11 +8,17 @@
   .profile-img-container{
     width: 20rem;
     height: 20rem;
-    margin-bottom: 5rem;
 
     @media(min-width: $md){
       width: 30rem;
       height: 30rem;
+    }
+  }
+
+  .about-icons-container{
+    margin: 3rem 0;
+    @media(min-width: $md){
+    margin-bottom: 0;
     }
   }
 
