@@ -6,6 +6,8 @@ nav{
   width: 2.5rem;
   background-color: $color-2-dark;
   display: block;
+  z-index: 1500;
+
 
   @media(min-width: $md){
     width: 5rem;
@@ -38,14 +40,12 @@ nav{
     
     li{
       margin-bottom: 5rem;
-
       .nav-btn{
         font-size: 1.7rem;
         padding: 1rem .8rem 1rem .3rem;
         border-left: none;
         color: $color-2;
         background-color: $color-1;
-        z-index: 500;
         display: flex;
         align-items: center;
         justify-content: space-between;
