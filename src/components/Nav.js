@@ -10,8 +10,6 @@ const Nav = ({ aboutRef, projectsRef, contactRef, headerRef }) => {
     ref.current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
 
-  const scrollToThis = (ref) => {
-  }
 
 
 
