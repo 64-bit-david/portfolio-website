@@ -4,7 +4,9 @@ nav{
   height: 100vh;
   top: 0;
   width: 2.5rem;
-  background-color: $color-2-dark;
+  background: $color-2-dark;
+  
+ 
   display: block;
   z-index: 1500;
 
@@ -40,18 +42,32 @@ nav{
     
     li{
       margin-bottom: 5rem;
+
       .nav-btn{
         font-size: 1.7rem;
         padding: 1rem .8rem 1rem .3rem;
-        border-left: none;
         color: $color-2;
         background-color: $color-1;
+        // background-color: transparent;
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 10rem;
         cursor: pointer;
         animation: translateRight .5s 1.5s ease-out forwards;
+        
+
+        &:hover{
+          background-color: $color-1;
+
+          .nav-icon, .nav-text{
+            color: $color-2;
+          }
+        }
+
+        .nav-icon{
+          // color: $color-1;
+      }
 
 
 
@@ -106,8 +122,13 @@ nav{
   color: $color-5;
   background-color: $color-2-dark;
   
+
   .cog{
     animation: rotate 1s 1.5s 1;
+    padding: 2px;
+    @media(min-width: $md){
+      width: 65%;
+    }
   }
   
 

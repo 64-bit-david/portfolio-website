@@ -80,7 +80,7 @@ const Contact = ({ setContactRef }) => {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} id="contact-form">
+        <form onSubmit={handleSubmit(onSubmit)} id="contact-form" data-aos="fade-up">
           <label htmlFor="name">Name</label>
           <input
             name="name"
@@ -144,7 +144,7 @@ const Contact = ({ setContactRef }) => {
     <div
       className="contact-container"
       ref={contactref}
-      data-aos="fade-up">
+    >
       {formSubmit ? renderFormSubmitMessage() : renderContactForm()}
     </div>
   )

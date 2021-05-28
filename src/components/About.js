@@ -23,8 +23,8 @@ const About = ({ setAboutRef }) => {
 
 
   return (
-    <div ref={aboutref} className="about-container" data-aos="fade-up">
-      <div className="header-container">
+    <div ref={aboutref} className="about-container" >
+      <div className="header-container" data-aos="fade-up">
         <h2>About Me</h2>
       </div>
 

@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { IoCogOutline } from 'react-icons/io5';
+
+import { ImSpinner10 } from 'react-icons/im';
 import { IconContext } from 'react-icons';
+
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -62,7 +64,7 @@ const App = () => {
           <div style={{
             transform: `translateY(${cogPosition}vh)`
           }}>
-            <IoCogOutline style={{
+            <ImSpinner10 style={{
               transform: `rotate(${rotation}deg)`,
             }} />
           </div>
@@ -75,7 +77,7 @@ const App = () => {
   return (
     <>
       {renderCog()}
-      <Header setHeaderRef={setHeaderRef} />
+      <Header setHeaderRef={setHeaderRef} aboutRef={aboutRef} />
       <Nav
         headerRef={headerRef}
         aboutRef={aboutRef}

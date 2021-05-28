@@ -1,13 +1,16 @@
 
 import { AiOutlineFundProjectionScreen, AiOutlineQuestion } from 'react-icons/ai';
-import { FiMessageSquare, FiHome } from 'react-icons/fi'
+import { FiMessageSquare, FiHome } from 'react-icons/fi';
 
 
 const Nav = ({ aboutRef, projectsRef, contactRef, headerRef }) => {
 
 
   const executeScroll = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
+    ref.current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+  }
+
+  const scrollToThis = (ref) => {
   }
 
 
@@ -40,7 +43,10 @@ const Nav = ({ aboutRef, projectsRef, contactRef, headerRef }) => {
             <li>
               <button
                 className='btn nav-btn'
-                onClick={() => executeScroll(projectsRef)}>
+                onClick={() => {
+                  executeScroll(projectsRef);
+
+                }}>
                 <span className="nav-icon">
                   <AiOutlineFundProjectionScreen /></span><span className="nav-text">Projects</span>
               </button>

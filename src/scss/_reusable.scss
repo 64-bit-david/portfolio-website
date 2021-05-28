@@ -17,6 +17,20 @@
   background-color: $color-2;
 }
 
+.down-btn{
+  font-size: 4.5rem;
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+  color: $color-1;
+  position: absolute;
+  bottom: 25vh;
+  transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+  cursor: pointer;
+}
+
 
 .header-container{
   text-align: center;
@@ -71,6 +85,16 @@ p{
   }
 }
 
+@keyframes navColorStart {
+  0%{
+    background-color: $color-1;
+  }
+  100%{
+    background-color: transparent;
+  }
+
+}
+
 @keyframes translateRight {
   0%{
     transform: translateX(0);
@@ -121,4 +145,16 @@ p{
   100%{
     transform: rotate(360deg);
   }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-40px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
