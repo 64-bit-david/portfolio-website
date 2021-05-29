@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
-  border-top: 2rem solid $color-2-dark;
+  // border-top: 2rem solid $color-2-dark;
+
+
 
   .profile-img-container{
-    width: 20rem;
-    height: 20rem;
 
-    @media(min-width: $md){
+    @media(min-width: $lg){
       width: 30rem;
       height: 30rem;
     }
@@ -31,7 +31,14 @@
     margin-bottom: 10rem;
     p{
       margin: 3rem 7.5rem 0 7.5rem;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media(min-width: $lg){
+    p{
+    margin: 3rem 7.5rem 0 7.5rem;
+    font-size: 1.8rem;
     }
   }
 }

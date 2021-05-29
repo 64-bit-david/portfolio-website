@@ -29,6 +29,11 @@
   transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
   cursor: pointer;
+
+
+  @media(max-height: 450px){
+    bottom: 10vh;
+  }
 }
 
 
@@ -59,10 +64,18 @@ p{
     margin: 0 1.5rem;
     padding: 1.25rem;
     border: 4px solid $color-2-dark;
+    border-left-color: $color-g1-dark;
+    border-top-color: $color-g2-dark;
+    border-right-color: $color-g1-dark;
+    border-bottom-color: $color-g2-dark;
+
     border-radius: 50%;
     &:hover{
-      border-color: $color-2-light;
-      transition: all .15s ease-in;
+      border-left-color: $color-g2-light;
+      border-top-color: $color-g1-light;
+      border-right-color: $color-g2-light;
+      border-bottom-color: $color-g1-light;
+      transition: border .3s ease;
     }
   }
 }

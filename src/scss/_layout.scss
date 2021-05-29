@@ -1,9 +1,19 @@
 body{
   max-width: 100%;
   overflow-x: hidden;
-  background-color: $color-2-dark;
   scrollbar-width: none;
   margin: 0 2.5rem 0 2.5rem;
+  background: hsla(192, 78%, 26%, 1);
+
+  background: linear-gradient(0deg, hsla(192, 78%, 26%, 1) 0%, hsla(355, 52%, 39%, 1) 100%);
+  
+  background: -moz-linear-gradient(0deg, hsla(192, 78%, 26%, 1) 0%, hsla(355, 52%, 39%, 1) 100%);
+  
+  background: -webkit-linear-gradient(0deg, hsla(192, 78%, 26%, 1) 0%, hsla(355, 52%, 39%, 1) 100%);
+  
+  
+
+
     @media(min-width: $md){
     margin: 0 5rem;
     }
