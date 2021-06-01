@@ -44,13 +44,9 @@ const Header = ({ setHeaderRef, aboutRef }) => {
       >
         <h1
           data-aos="fade-down"
-          data-aos-delay="1500"
+          data-aos-delay="1850"
         >David Williamson</h1>
-        <br />
-        <h1
-          data-aos="fade-up"
-          data-aos-delay="2000"
-        >Web Developer</h1>
+
         {renderDownArrow()}
       </header>
     </>
