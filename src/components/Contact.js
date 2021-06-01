@@ -65,7 +65,7 @@ const Contact = ({ setContactRef }) => {
   const renderContactForm = () => {
     return (
       <>
-        <div className="header-container">
+        <div className="header-container contact-header" data-aos="fade-up">
           <h2>Contact</h2>
           <p>Feel free to get in touch!</p>
         </div>

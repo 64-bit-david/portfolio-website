@@ -1,6 +1,10 @@
 .contact-container{
   margin-bottom: 20rem;
+  padding-top: 2.5rem;
   // border-top: 2rem solid $color-2-dark;
+
+  .contact-header h2{
+  }
 form{
   display: flex;
   flex-direction: column;

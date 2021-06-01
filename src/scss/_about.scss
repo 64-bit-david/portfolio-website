@@ -8,10 +8,11 @@
 
 
   .profile-img-container{
+    max-width: 200px;
 
     @media(min-width: $lg){
-      width: 30rem;
-      height: 30rem;
+      max-width: 300px;
+
     }
   }
 

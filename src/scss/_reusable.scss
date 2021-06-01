@@ -68,6 +68,7 @@ p{
     border-top-color: $color-g2-dark;
     border-right-color: $color-g1-dark;
     border-bottom-color: $color-g2-dark;
+    
 
     border-radius: 50%;
     &:hover{
@@ -75,7 +76,8 @@ p{
       border-top-color: $color-g1-light;
       border-right-color: $color-g2-light;
       border-bottom-color: $color-g1-light;
-      transition: border .3s ease;
+      box-shadow:  -1px 1px 1px $color-2, -1px -1px 1px $color-2, 1px 1px 1px $color-2, 1px -1px 1px $color-2;
+      transition: all .3s ease;
     }
   }
 }
