@@ -42,9 +42,9 @@ const About = ({ setAboutRef }) => {
         </div>
       </div>
       <div className="about-text" data-aos="fade-up">
-        <p>Hi there! I'm David Williamson, a javascript developer based in the UK currently in search of an entry level / junior position.</p>
+        <p>Hi there! I'm a master's student studying Software Development at the University of Strathclyde and am in pursuit of a related graduate postion in 2022.  </p>
 
-        <p>On this site you'll find some of my latest projects built to showcase the skills and technologies I have been learning on my journey to become a developer. </p>
+        <p>On this site you'll find some of my latest projects built to showcase the skills and technologies I have been learning and developing. </p>
       </div>
     </div>
   )
