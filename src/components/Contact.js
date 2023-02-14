@@ -24,7 +24,7 @@ const Contact = ({ setContactRef }) => {
   }, [setContactRef])
 
   const sendEmail = (n) => {
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_EMAILTEMP, '#contact-form', process.env.REACT_APP_EMAILJS_USERID).then(res => {
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATE, '#contact-form', process.env.REACT_APP_EMAILJS_PK).then(res => {
       if (res.status === 200) {
         setFormSubmit(true);
         setFormSuccess(true);
@@ -34,6 +34,7 @@ const Contact = ({ setContactRef }) => {
       setFormSubmit(true);
       setLoading(false);
       setFormSuccess(false);
+      console.log(err)
     });
   }
 

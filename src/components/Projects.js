@@ -1,12 +1,14 @@
 import { FaReact, FaHtml5, FaCcStripe, FaSass, FaNodeJs } from 'react-icons/fa';
-import { SiCss3, SiRedux, SiMongodb, SiMapbox } from 'react-icons/si'
-import { useRef, useEffect } from 'react';
+import { SiCss3, SiRedux, SiMongodb, SiMapbox, SiDocker, SiFlask, SiMariadb, SiMicrosoftazure } from 'react-icons/si'
+import { useRef, useEffect, useState } from 'react';
 
 
 import image1 from '../img/writers-desk-min.jpg'
 import image2 from '../img/reddit-news-min.jpg';
 import image3 from '../img/whiskymap-min.jpg';
 import image4 from '../img/ex-quiz-it.jpg';
+import image5 from '../img/nta-min.jpg';
+
 
 
 
@@ -14,6 +16,22 @@ import image4 from '../img/ex-quiz-it.jpg';
 const Projects = ({ setProjectsRef }) => {
 
   const projectsref = useRef();
+
+
+  const [cardBtnHover1, setCardBtnHover1] = useState(false)
+  const [cardBtnHover2, setCardBtnHover2] = useState(false)
+  const [cardBtnHover3, setCardBtnHover] = useState(false)
+
+
+
+  const handleMouseEnter = () => {
+    setCardBtnHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setCardBtnHover(false);
+  };
+
 
 
 
@@ -286,6 +304,75 @@ const Projects = ({ setProjectsRef }) => {
     )
   }
 
+
+  const card5 = () => {
+    return (
+      <div className="project-card project-card-1" data-aos="zoom-in">
+        <div className="card-header">
+          <h2>News Trends Analyser</h2>
+        </div>
+        <div className="card-main">
+          <div className="flip-front">
+            <div className="card-img">
+              <img
+                alt="Snapshot of News Trends Analyser App"
+                src={image5} />
+            </div>
+            <div className="card-desc">
+              <p>Msc Project. Utilising serverless functions, a webscraper collects data from popular news websites which is then analysed and returned to a user.</p>
+            </div>
+          </div>
+          <div className="flip-back">
+            <div className="card-back-header">
+              <h3>Technology</h3>
+            </div>
+            <div className="project-tech-list">
+              <ul className="tech-icons-grid">
+                <li>
+                  <p>React</p>
+                  <FaReact />
+                </li>
+                <li>
+                  <p>Flask</p>
+                  <SiFlask />
+                </li>
+                <li>
+                  <p>Azure</p>
+                  <SiMicrosoftazure />
+                </li>
+                <li>
+                  <p>MariaDB</p>
+                  <SiMariadb />
+                </li>
+                <li>
+                  <p>Docker</p>
+                  <SiDocker />
+                </li>
+              </ul>
+            </div>
+            <div className="card-back-text">
+              <p>A Flask API and MariaDB database allow the user to create an account and save generated results.</p>
+            </div>
+            <div className="project-links-container">
+              <a
+                href="https://github.com/64-bit-david/dissertation-project" className="btn card-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Code</a>
+              <button
+                className="btn card-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
 
     <div className="projects-container" ref={projectsref}>
@@ -301,10 +388,12 @@ const Projects = ({ setProjectsRef }) => {
         </p>
       </div>
       <div className="projects-cards-container">
+        {card5()}
         {card1()}
         {card2()}
         {card3()}
         {card4()}
+
       </div>
 
     </div>
