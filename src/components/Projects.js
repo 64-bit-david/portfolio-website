@@ -7,16 +7,7 @@ const Projects = ({ setProjectsRef }) => {
 
   const projectsref = useRef();
 
-  const [cardBtnHover, setCardBtnHover] = useState(false)
-
-  const handleMouseEnter = () => {
-    setCardBtnHover(true);
-  };
-
-  const handleMouseLeave = () => {
-    setCardBtnHover(false);
-  };
-
+ 
 
 
 

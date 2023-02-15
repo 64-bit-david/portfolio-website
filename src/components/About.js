@@ -42,9 +42,9 @@ const About = ({ setAboutRef }) => {
         </div>
       </div>
       <div className="about-text" data-aos="fade-up">
-        <p>Hi there! I'm a master's student studying Software Development at the University of Strathclyde and am in pursuit of a related graduate postion in 2022.  </p>
+        <p>Hi there! I have recently completed a Master's Degree in Software Development and am now in pursuit of a related position for an immediate start.  </p>
 
-        <p>On this site you'll find some of my latest projects built to showcase the skills and technologies I have been learning and developing. </p>
+        <p>On this site you'll find links to my projects which showcase the skills and technologies I have been learning and developing. </p>
       </div>
     </div>
   )
