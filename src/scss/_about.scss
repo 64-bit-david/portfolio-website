@@ -1,0 +1,45 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    // border-top: 2rem solid $color-2-dark;
+  
+    .profile-img-container{
+      max-width: 200px;
+  
+      @media(min-width: $lg){
+        max-width: 300px;
+  
+      }
+    }
+  
+    .about-icons-container{
+      margin: 3rem 0;
+      @media(min-width: $md){
+      margin-bottom: 0;
+      }
+    }
+  
+    p{
+      text-align: center;
+      margin: 0 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+  
+    @media(min-width: $md){
+      margin-bottom: 10rem;
+      p{
+        margin: 3rem 7.5rem 0 7.5rem;
+        font-size: 1.5rem;
+      }
+    }
+  
+    @media(min-width: $lg){
+      p{
+      margin: 3rem 7.5rem 0 7.5rem;
+      font-size: 1.8rem;
+      }
+    }
+  }

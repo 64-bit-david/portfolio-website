@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600&display=swap');
+
+$font-1: 'Open Sans', sans-serif;
+$font-2: 'Roboto Mono', monospace;
+
+$color-1: #E7ECEF;
+$color-2: #274C77;
+$color-3: #6096BA;
+$color-4: #A3CEF1;
+$color-5: #8B8C89;
+
+$color-g1: #993039;
+$color-g2: #0F6378;
+$color-g2-light: lighten($color-g2, 2%);
+$color-g1-light: lighten($color-g1, 2%);
+$color-g2-dark: darken($color-g2, 10%);
+$color-g1-dark: darken($color-g1, 10%);
+
+
+
+$color-danger: rgb(216, 106, 112);
+
+$color-2-dark: darken($color-2, 5%);
+$color-2-light: lighten($color-2, 5%);
+$color-2-lightest: lighten($color-2, 15%);
+
+
+
+
+//break-points 
+$sm: 480px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1300px;
+$xxl: 2000px;
+
+//#274C77
+//#214064

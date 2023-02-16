@@ -1,8 +1,8 @@
 import { useRef, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { SiGmail } from 'react-icons/si'
-import emailjs from 'emailjs-com';
-import Loader from 'react-loader-spinner';
+import emailjs from '@emailjs/browser';
+// import Loader from 'react-loader-spinner';
 
 
 
@@ -130,9 +130,10 @@ const Contact = ({ setContactRef }) => {
           }
           {loading ?
             <div className="loader-container">
-              <Loader type="Oval" color="#8B8C89" height={40}
+              {/* <Loader type="Oval" color="#8B8C89" height={40}
                 timeout={5000}
-              />
+              /> */}
+              loading
             </div> :
             <button className="btn form-btn">Send</button>
           }
@@ -150,3 +151,5 @@ const Contact = ({ setContactRef }) => {
     </div>
   )
 }
+
+export default Contact;

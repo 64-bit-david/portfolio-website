@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { FaLinkedin } from 'react-icons/fa'
-import profilePic from '../img/profile.png';
+import profilePic from '../assets/profile.png';
 
 const About = ({ setAboutRef }) => {
 

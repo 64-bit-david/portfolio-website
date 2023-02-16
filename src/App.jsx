@@ -1,5 +1,5 @@
+import './styles/main.css'
 import React, { useRef, useEffect, useState } from 'react';
-
 import { ImSpinner10 } from 'react-icons/im';
 import { IconContext } from 'react-icons';
 

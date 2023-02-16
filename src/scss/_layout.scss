@@ -1,0 +1,29 @@
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    margin: 0 2.5rem 0 2.5rem;
+    background: hsla(192, 78%, 26%, 1);
+    background: linear-gradient(0deg, hsla(192, 78%, 26%, 1) 0%, hsla(355, 52%, 39%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(192, 78%, 26%, 1) 0%, hsla(355, 52%, 39%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(192, 78%, 26%, 1) 0%, hsla(355, 52%, 39%, 1) 100%);
+
+    @media(min-width: $md){
+      margin: 0 5rem;
+      }
+  }
+  
+  .main-header-container{
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    h1{
+      opacity: 0;
+      // animation: fadeIn 1.5s 1.5s forwards ease-in;
+    }
+  }
+  

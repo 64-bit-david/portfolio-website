@@ -1,0 +1,130 @@
+nav{
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    width: 2.5rem;
+    background: transparent;
+    display: block;
+    z-index: 1500;
+    @media(min-width: $md){
+      width: 5rem;
+    }
+
+    @media(min-width: $lg){
+      left: 0;
+    }
+
+    .nav-list ul{
+      position: fixed;
+      right: 7.4rem;
+      height: 100vh;
+      top: 0;
+      width: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      opacity: 0;
+      animation: fadeIn .2s .5s ease-in forwards;
+      z-index: 150;
+
+      @media(min-width: $md){
+      right: 12rem;
+      }
+      @media(min-width: $lg){
+        left: -10rem;
+      }
+      @media(max-height: 450px){
+        top: 2.5rem;
+      
+      }
+      
+      li{
+        margin-bottom: 5rem;
+  
+        .nav-btn{
+          font-size: 1.8rem;
+          padding: 1rem .3rem 1rem .3rem;
+          color: $color-2;
+          background-color: $color-1;
+          // background-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 10rem;
+          cursor: pointer;
+          animation: translateRight .5s 1.5s ease-out forwards;
+          &:hover{
+            background-color: $color-1;
+  
+            .nav-icon, .nav-text{
+              color: $color-2;
+            }
+          }
+
+          @media(min-width: $md){
+            width: 15rem;
+            font-size: 3rem;
+            padding: 1.5rem 1rem 1.5rem 1rem;
+            border-left: 1px solid $color-1;
+            animation: translateRightLgDv .5s 1.5s ease-out forwards;
+          }
+
+          @media(min-width: $lg){
+            font-size: 2.5rem;
+            flex-direction: row-reverse;
+            padding: 1rem 0 1rem .3rem;
+            animation: translateLeftLgDv 2s  ease-out;
+            transition: all .2s ease-in;
+            &:hover{
+              transform: translateX(10rem);
+            }
+          }
+  
+          @media(max-height: 450px){
+            font-size: 1.7rem;
+            padding: 1rem .8rem 1rem .3rem;
+          }      
+        }
+          .nav-icon{
+            color: $color-2;
+            margin-right: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+    
+  .cog-container{
+    text-align: center;
+    font-size: 2.5rem;
+    position: fixed;
+    display: block;
+    left: 0;
+    height: 100vh;
+    top: 0;
+    padding-top: 3rem;
+    color: $color-5;
+    background-color: transparent;
+    .cog{
+      animation: rotate 1s 1.5s 1;
+      padding: 2px;
+      @media(min-width: $md){
+        width: 65%;
+      }
+    }
+    
+    @media(min-width: $md){
+      width: 5rem;
+      font-size: 5rem;
+    }
+  
+    @media(min-width: $lg){
+      right: 0;
+      left: initial;
+    }
+  }
+  

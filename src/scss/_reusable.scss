@@ -1,0 +1,169 @@
+.btn{
+    background-color: transparent;
+    color: $color-1;
+    border: 1px solid $color-1;
+    font-size: 1.6rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: all .15s ease-in;
+  }
+  
+  
+  
+  .card-btn{
+    padding: 1rem;
+    background-color: $color-2;
+    margin: 0 1rem;
+  }
+  
+  .down-btn{
+    font-size: 4.5rem;
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-1;
+    position: absolute;
+    bottom: 25vh;
+    transform: translatey(0px);
+      animation: float 6s ease-in-out infinite;
+    cursor: pointer;
+    @media(max-height: 450px){
+      bottom: 10vh;
+    }
+  }
+  
+  
+  .header-container{
+    text-align: center;
+    margin-top: 3rem;
+    h2{
+      font-size: 2.9rem;
+      margin: 2rem 0;
+    }
+  }
+  
+  p{
+    font-size: 1.8rem;
+  }
+  
+  .about-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 0;
+    a{
+      display: flex;
+      color: $color-1;
+      font-size: 3rem;
+      text-align: center;
+      margin: 0 1.5rem;
+      padding: 1.25rem;
+      border: 4px solid $color-2-dark;
+      border-left-color: $color-g1-dark;
+      border-top-color: $color-g2-dark;
+      border-right-color: $color-g1-dark;
+      border-bottom-color: $color-g2-dark;
+      border-radius: 50%;
+      &:hover{
+        border-left-color: $color-g2-light;
+        border-top-color: $color-g1-light;
+        border-right-color: $color-g2-light;
+        border-bottom-color: $color-g1-light;
+        box-shadow:  -1px 1px 1px $color-2, -1px -1px 1px $color-2, 1px 1px 1px $color-2, 1px -1px 1px $color-2;
+        transition: all .3s ease;
+      }
+    }
+  }
+  
+  
+  
+  //animations
+  
+  @keyframes fadeInOut{
+    0%{
+      opacity: 0;
+    }
+    75%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      display: none;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes navColorStart {
+    0%{
+      background-color: $color-1;
+    }
+    100%{
+      background-color: transparent;
+    }
+  
+  }
+  
+  @keyframes translateRight {
+    0%{
+      transform: translateX(0);
+    }
+  
+    100%{
+      transform: translateX(7rem);
+    }
+  }
+  
+  @keyframes translateRightLgDv {
+    0%{
+      transform: translateX(0);
+    }
+  
+    100%{
+      transform: translateX(9.5rem);
+    }
+  }
+  
+  @keyframes translateLeftLgDv {
+    0%{
+      transform: translateX(10rem);
+    }
+    80%{
+      transform: translateX(10rem);
+    }
+  
+    100%{
+      transform: translateX(0);
+    }
+  }
+  
+  
+  @keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotate{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes float {
+      0% {
+          transform: translatey(0px);
+      }
+      50% {
+          transform: translatey(-40px);
+      }
+      100% {
+          transform: translatey(0px);
+      }
+  }

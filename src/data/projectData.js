@@ -1,11 +1,11 @@
 import { SiCss3, SiRedux, SiMongodb, SiMapbox, SiDocker, SiFlask, SiMariadb, SiMicrosoftazure, SiSass } from 'react-icons/si'
 import { FaReact, FaHtml5, FaCcStripe, FaSass, FaNodeJs, FaStripe } from 'react-icons/fa';
 
-import writerImg from '../img/writers-desk-min.jpg'
-import redditImg from '../img/reddit-news-min.jpg';
-import whiskyImg from '../img/whiskymap-min.jpg';
-import quizImg from '../img/ex-quiz-it.jpg';
-import newsTrendsImg from '../img/nta-min.jpg';
+import writerImg from '../assets/writers-desk-min.jpg'
+import redditImg from '../assets/reddit-news-min.jpg';
+import whiskyImg from '../assets/whiskymap-min.jpg';
+import quizImg from '../assets/ex-quiz-it.jpg';
+import newsTrendsImg from '../assets/nta-min.jpg';
 
 
 const projectData = [
