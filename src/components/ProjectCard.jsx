@@ -39,8 +39,8 @@ const handleMouseLeave = () => {
         <div className="project-tech-list">
          
           <ul className="tech-icons-grid">
-          {cardData.iconData.map(icon => (
-                <li>
+          {cardData.iconData.map((icon, index) => (
+                <li key={index}>
                     <p>{icon.name}</p>
                     <icon.icon/>
                 </li>
