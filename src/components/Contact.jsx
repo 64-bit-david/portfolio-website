@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { SiGmail } from 'react-icons/si'
 import emailjs from '@emailjs/browser';
-// import Loader from 'react-loader-spinner';
+import { Puff } from 'react-loader-spinner';
 
 
 
@@ -12,6 +12,7 @@ import emailjs from '@emailjs/browser';
 const Contact = ({ setContactRef }) => {
 
   const contactref = useRef();
+  const form = useRef();
 
   const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -23,8 +24,11 @@ const Contact = ({ setContactRef }) => {
     setContactRef(contactref);
   }, [setContactRef])
 
-  const sendEmail = (n) => {
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATE, '#contact-form', process.env.REACT_APP_EMAILJS_PK).then(res => {
+  const sendEmail = (e) => {
+    e.preventDefault(); 
+    setLoading(true)
+    emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICEID, import.meta.env.VITE_EMAILJS_TEMPLATE, form.current, import.meta.env.VITE_EMAILJS_PK)
+    .then(res => {
       if (res.status === 200) {
         setFormSubmit(true);
         setFormSuccess(true);
@@ -36,12 +40,6 @@ const Contact = ({ setContactRef }) => {
       setFormSuccess(false);
       console.log(err)
     });
-  }
-
-
-  const onSubmit = (data) => {
-    setLoading(true);
-    sendEmail();
   }
 
 
@@ -72,16 +70,16 @@ const Contact = ({ setContactRef }) => {
         </div>
 
         <div className="about-icons-container">
-          <div className="about-icon-container">
+          <div className="about-icon-container about-email-container">
             <a
               aria-label="Send E-mail to David Williamosn"
-              href="mailto:dwilliamsonwebdev@gmail.com">
+              href="mailto:david.dev.w@gmail.com">
               <SiGmail />
             </a>
           </div>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} id="contact-form">
+        <form onSubmit={sendEmail} id="contact-form" ref={form}>
           <label htmlFor="name">Name</label>
           <input
             name="name"
@@ -130,10 +128,15 @@ const Contact = ({ setContactRef }) => {
           }
           {loading ?
             <div className="loader-container">
-              {/* <Loader type="Oval" color="#8B8C89" height={40}
-                timeout={5000}
-              /> */}
-              loading
+              <Puff
+                height="40"
+                width="40"
+                radius={1}
+                color="#8B8C89"
+                ariaLabel="puff-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}/>
             </div> :
             <button className="btn form-btn">Send</button>
           }

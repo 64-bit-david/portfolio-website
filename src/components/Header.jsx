@@ -38,7 +38,7 @@ const Header = ({ setHeaderRef, aboutRef }) => {
         className="main-header-container"
         ref={headerref}
       >
-        <h1>David Williamson</h1>
+        <h1>David Williamson: Project Portfolio Site</h1>
         {renderDownArrow()}
       </header>
     </>

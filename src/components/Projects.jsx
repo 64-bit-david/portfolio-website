@@ -29,7 +29,7 @@ const Projects = ({ setProjectsRef }) => {
       <div className="projects-cards-container">
         {/* insert data from the projectData file to generate the cards */}
         {projectData.map(project => (
-          <ProjectCard cardData={project}/>
+          <ProjectCard cardData={project} key={project.id}/>
         ))}
       </div>
     </div>
